@@ -1,0 +1,248 @@
+<html lang="en" class=" ">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="d/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>門口機</title>
+
+    <link rel="stylesheet" href="d/bootstrap/style.css">
+    <link rel="stylesheet" href="d/bootstrap/all.min.css.css">
+    <link rel="stylesheet" href="d/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="d/bootstrap/boostrap.min.css">
+
+
+    <script type="text/javascript" src="d/bootstrap/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="d/bootstrap/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="d/bootstrap/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="d/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <!-- googlefont -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&amp;family=Open+Sans:wght@400;700;800&amp;display=swap"
+        rel="stylesheet">
+
+    <style type="text/css">
+        /* .card-2.bt[data-v-2dc54a20] {
+            top: 288px;
+        } */
+
+        .card-2.bb[data-v-2dc54a20] {
+            top: 490px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" data-v-app="">
+        <div class="body">
+            <div class="homebox">
+                <nav class="nav">
+                    <ul>
+                        <li><a aria-current="page" href="home.html"
+                                class="router-link-active router-link-exact-active home"><i
+                                    class="fa-solid fa-house-chimney"></i></a></li>
+                        <li><a href="calendar.html" class="calendar"><i class="fa-regular fa-calendar-days"></i></a></li>
+                        <li><a href="list.html" class="list"><i class="fa-regular fa-address-book"></i></a></li>
+                        <li><a href="setting" class="change-mode"><i class="fa-solid fa-gear"></i></a></li>
+                    </ul>
+                </nav>
+                <main data-v-2dc54a20=""><!--div class="row-1" v-if="topBlock!=null">
+      <div :class="['state', topBlock.state]">
+        <div class="text">
+          <h1 class="title" id="state">{{ stateRef[topBlock.state] }}</h1>
+          <div v-if="topBlock.state=='occupied'">
+            <button class="btn btn-success mx-1" @click="endMeet">結束會議</button>
+            <button class="btn btn-warning mx-1" @click="extend">延長會議</button>
+          </div>
+          <h5 class="department" v-if="topBlock.data!=null">{{ topBlock.data.dept }}</h5>
+        </div>
+        <div class="text">
+          <h1 class="title">{{ now.format('HH:mm') }}</h1>
+          <h1 class="title" v-if="topBlock.data!=null">{{ topBlock.data.title }} | {{ topBlock.data.user }}</h1>
+        </div>
+        <div class="text">
+          <h6><small>{{ now.format('ddd') }}, {{ now.format('YYYY年MM月DD日') }}</small></h6>
+          <div class="boxContainer" v-if="topBlock.state=='occupied'">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+          </div>
+          <h6 v-if="topBlock.state=='occupied'"><small>{{ toDiffTIme(topBlock.data.start) }}</small></h6>
+        </div>
+      </div>
+    </div-->
+                    <div data-v-2dc54a20="" class="row-1">
+                        <div class="state vacancy">
+                            <div class="text">
+                                <div class="d-flex align-items-center">
+                                    <h1 class="title" id="state">會議室可預約</h1><!--v-if-->
+                                </div><!--v-if-->
+                            </div>
+                            <div class="text">
+                                <h1 class="title">15:22</h1><!--v-if-->
+                            </div>
+                            <div class="text">
+                                <h6><small>週五, 2023年06月30日</small></h6>
+                                <div class="d-flex"><!--v-if--><!--v-if--></div><!--v-if-->
+                            </div>
+                        </div>
+                        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content popup"><i
+                                        class="fa-regular fa-credit-card circle-icon modal-icon"></i>
+                                    <div class="modal-body">
+                                        <form>
+                                            <h4 class="modal-title" id="myModalLabel">出示卡片認證</h4><img
+                                                src="d/images/touch-card.png" alt=""><input type="text" inputmode="none"
+                                                style="height: 1px;">
+                                        </form><button class="btn btn-outline-primary">使用員工編號認證</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content popup"><i
+                                        class="fa-regular fa-user circle-icon modal-icon"></i>
+                                    <div class="modal-body">
+                                        <form>
+                                            <h4 class="modal-title" id="myModalLabel">員工編號認證</h4><input type="text"
+                                                class="form-control my-3"><button type="submit"
+                                                class="btn btn-primary">認證</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-2dc54a20="" class="row-2">
+                        <div data-v-2dc54a20="" class="function"><!--div :class="'card-1 '+(topBlock.state!='occupied'?'disabled':'')" @click="checkin">
+          <div class="icon-wrapper">
+            <i class="fa-regular fa-square-plus icon"></i>
+          </div>
+          <div class="card1-text">
+            <h5><small>會議報到</small></h5>
+            <h6><small>掃描卡片加入會議</small></h6>
+          </div>
+        </div-->
+                            <div data-v-2dc54a20="" class="card-2 disabled">
+                                <div data-v-2dc54a20="" class="icon-wrapper"><i data-v-2dc54a20=""
+                                        class="fa-regular fa-square-plus icon"></i></div>
+                                <div data-v-2dc54a20="" class="card2-text">
+                                    <h5 data-v-2dc54a20=""><small data-v-2dc54a20="">會議報到</small></h5>
+                                    <h6 data-v-2dc54a20=""><small data-v-2dc54a20="">掃描卡片加入會議</small></h6>
+                                </div>
+                            </div>
+                            <div data-v-2dc54a20="" class="card-2 card-right bt disabled">
+                                <div data-v-2dc54a20="" class="icon-wrapper"><i data-v-2dc54a20=""
+                                        class="fa-regular fa-user icon"></i></div>
+                                <div data-v-2dc54a20="" class="card2-text">
+                                    <h5 data-v-2dc54a20=""><small data-v-2dc54a20="">會議報到</small></h5>
+                                    <h6 data-v-2dc54a20=""><small data-v-2dc54a20="">員工號碼加入會議</small></h6>
+                                </div>
+                            </div><a data-v-2dc54a20="" href="calendar.html" class="">
+                                <div data-v-2dc54a20="" class="card-2 card-left bb">
+                                    <div data-v-2dc54a20="" class="icon-wrapper"><i data-v-2dc54a20=""
+                                            class="fa-regular fa-calendar-days icon"></i></div>
+                                    <div data-v-2dc54a20="" class="card2-text">
+                                        <h5 data-v-2dc54a20=""><small data-v-2dc54a20="">預約會議</small></h5>
+                                        <h6 data-v-2dc54a20=""><small data-v-2dc54a20="">馬上開始新的會議</small></h6>
+                                    </div>
+                                </div>
+                            </a><a data-v-2dc54a20="" href="list.html" class="">
+                                <div data-v-2dc54a20="" class="card-2 card-right bb">
+                                    <div data-v-2dc54a20="" class="icon-wrapper"><i data-v-2dc54a20=""
+                                            class="fa-regular fa-credit-card icon"></i></div>
+                                    <div data-v-2dc54a20="" class="card2-text">
+                                        <h5 data-v-2dc54a20=""><small data-v-2dc54a20="">會員綁卡</small></h5>
+                                        <h6 data-v-2dc54a20=""><small data-v-2dc54a20="">馬上註冊開始會議</small></h6>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div data-v-2dc54a20="" class="display">
+                            <div data-v-2dc54a20="" class="card-3">
+                                <div data-v-2dc54a20="" class="card3-text">
+                                    <h5 data-v-2dc54a20=""><small data-v-2dc54a20="">即將到來的會議</small></h5><!--
+            <button type="button" class="mx-1 btn btn-primary" @click="lock(3, 0)">open</button>
+            <button type="button" class="mx-1 btn btn-primary" @click="lock">close</button>
+            -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-2dc54a20="" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="cardModall"
+                        aria-hidden="true">
+                        <div data-v-2dc54a20="" class="modal-dialog">
+                            <div data-v-2dc54a20="" class="modal-content popup"><i data-v-2dc54a20=""
+                                    class="fa-regular fa-credit-card circle-icon modal-icon"></i>
+                                <div data-v-2dc54a20="" class="modal-body">
+                                    <form data-v-2dc54a20="">
+                                        <h4 data-v-2dc54a20="" class="modal-title" id="cardModall">出示卡片認證</h4><img
+                                            data-v-2dc54a20="" src="/images/touch-card.png" alt=""><input
+                                            data-v-2dc54a20="" type="text" inputmode="none" style="height: 1px;">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-2dc54a20="" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="memberNoModall" aria-hidden="true">
+                        <div data-v-2dc54a20="" class="modal-dialog">
+                            <div data-v-2dc54a20="" class="modal-content popup"><i data-v-2dc54a20=""
+                                    class="fa-regular fa-user circle-icon modal-icon"></i>
+                                <div data-v-2dc54a20="" class="modal-body">
+                                    <form data-v-2dc54a20="">
+                                        <h4 data-v-2dc54a20="" class="modal-title" id="memberNoModall">員工編號認證</h4><input
+                                            data-v-2dc54a20="" type="text" class="form-control my-3"><button
+                                            data-v-2dc54a20="" type="submit" class="btn btn-primary">報到</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-v-2dc54a20="" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="extendModall" aria-hidden="true">
+                        <div data-v-2dc54a20="" class="modal-dialog">
+                            <div data-v-2dc54a20="" class="modal-content popup"><i data-v-2dc54a20=""
+                                    class="fa-regular fa-clock circle-icon modal-icon"></i>
+                                <div data-v-2dc54a20="" class="modal-body">
+                                    <form data-v-2dc54a20="">
+                                        <h4 data-v-2dc54a20="" class="modal-title" id="extendModall">會議結束時間</h4>
+                                        <div data-v-2dc54a20="" class="my-3"></div>
+                                        <h4 data-v-2dc54a20="" class="modal-title" id="">延長分鐘數</h4>
+                                        <div data-v-2dc54a20="" class="input-group my-3">
+                                            <div data-v-2dc54a20="" class="input-group-prepend"><button
+                                                    data-v-2dc54a20="" class="btn btn-outline-danger" type="button"><i
+                                                        data-v-2dc54a20="" class="fa-solid fa-minus"></i></button></div>
+                                            <input data-v-2dc54a20="" type="text" class="form-control"
+                                                inputmode="numeric" maxlength="3">
+                                            <div data-v-2dc54a20="" class="input-group-append"><button
+                                                    data-v-2dc54a20="" class="btn btn-outline-primary" type="button"><i
+                                                        data-v-2dc54a20="" class="fa-solid fa-plus"></i></button></div>
+                                        </div><button data-v-2dc54a20="" type="submit" class="btn btn-primary"><span
+                                                data-v-2dc54a20="">確定</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
