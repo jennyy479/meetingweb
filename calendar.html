@@ -77,7 +77,8 @@
 
         .fc-direction-ltr {
             direction: ltr;
-            text-align: left
+            text-align: left;
+            height: 100%;
         }
 
         .fc-direction-rtl {
@@ -292,7 +293,8 @@
         }
 
         .fc .fc-toolbar.fc-header-toolbar {
-            margin-bottom: 1.5em
+            margin-bottom: 1.5em;
+            flex-wrap: wrap;
         }
 
         .fc .fc-toolbar.fc-footer-toolbar {
@@ -370,7 +372,7 @@
         }
 
         .fc .fc-scrollgrid-liquid {
-            height: 50%
+            height: 90%
         }
 
         .fc .fc-scrollgrid-section,
@@ -431,7 +433,8 @@
             left: 0;
             position: absolute;
             right: 0;
-            top: 0
+            top: 0;
+            height: 90%
         }
 
         .fc .fc-col-header-cell-cushion {
@@ -1320,7 +1323,7 @@
                         </div>
                         <div class="container">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12  col-md-6">
                                     <div class="form-group input-container"><label for="name">會議名稱</label><input
                                             type="email" class="form-control" id="name" placeholder="請輸入會議名稱"></div>
                                     <div class="form-group input-container"><label for="date">會議日期</label><input
@@ -1328,10 +1331,12 @@
                                     <div class="form-group input-container">
                                         <div><label for="start">會議時間</label>
                                             <div class="d-flex align-items-center"><input type="time"
-                                                    class="form-control" id="start"><span class="px-3">~</span><input
+                                                    class="form-control" id="start"><span class="px-1">~</span><input
                                                     type="time" class="form-control" id="end" readonly=""></div>
                                         </div>
                                     </div>
+
+                                    
                                     <div class="form-group input-container"><label for="minute">會議分鐘數</label><input
                                             class="form-control" id="minute" maxlength="3" inputmode="numeric"></div>
                                     <div class="form-group input-container"><label for="meet">視訊軟體</label><select
@@ -1386,7 +1391,7 @@
                                             class="form-control" id="comment" rows="2.5"></textarea></div>
 
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12  col-md-6 pb-5">
                                     <div attrs="[object Object]"
                                         class="fc fc-media-screen fc-direction-ltr fc-theme-standard">
                                         <div class="fc-header-toolbar fc-toolbar ">
