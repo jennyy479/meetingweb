@@ -34,7 +34,8 @@
                 <nav class="nav">
                     <ul>
                         <li><a href="home.html" class="home"><i class="fa-solid fa-house-chimney"></i></a></li>
-                        <li><a href="calendar.html" class="calendar"><i class="fa-regular fa-calendar-days"></i></a></li>
+                        <li><a href="calendar.html" class="calendar"><i class="fa-regular fa-calendar-days"></i></a>
+                        </li>
                         <li><a href="list.html" class="router-link-active router-link-exact-active list"
                                 aria-current="page"><i class="fa-regular fa-address-book"></i></a></li>
                         <li><a href="d/setting" class="change-mode"><i class="fa-solid fa-gear"></i></a></li>
@@ -45,57 +46,63 @@
                         <div class="member-list bg-white">
                             <div class="member-list-name">
                                 <h4>公司人員名單</h4>
-                            <i class="fa-solid fa-circle-plus fa-lg" style="color: rgb(189, 189, 189);"></i>
+                                <i class="fa-solid fa-circle-plus fa-lg" style="color: rgb(189, 189, 189);"></i>
                             </div>
-                            
-                            <div class="line">
-                                <hr>
-                            </div>
+
                             <div class="form"><i class="fa-solid fa-magnifying-glass"></i><input type="text"
                                     class="form-control form-input" placeholder="搜尋"></div>
                         </div>
-                        <div class="overflow-auto mt-4">
-                            <table class="member-info table table-borderless mt-4">
-                                <tbody>
-                                    <tr class="position-relative">
-                                        <td>
-                                            <h5 class="member-name">abc</h5>
-                                            <h6 class="member-email mt-4"><small>abc@gmail.com</small></h6>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <h6 class="member-department">aa</h6>
-                                        </td>
-                                    </tr>
-                                    <tr class="position-relative">
-                                        <td>
-                                            <h5 class="member-name">def</h5>
-                                            <h6 class="member-email mt-4"><small>def@gmail.com</small></h6>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                            <h6 class="member-department">aa</h6>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="v-line">
-                        <div class="member-detail">
-                            <h3 class="member-detail-name">abc</h3>
-                            <h6 class="detail-member-department detail-department float-right">aa</h6>
-                            <h6 class="member-email mt-5"><small>abc@gmail.com</small></h6>
-                        </div>
-                        <div class="member-detail detail-incoming">
-                            <div class="detail-incoming-card mt-4">
-                                <div class="float-right"><button type="button"
-                                        class="btn btn-primary mt-3">會員綁卡</button>
-                                    <div><button type="button" class="btn btn-outline-danger mt-3">解除綁定</button></div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 list top-line all-line right-line">
+                                <div class="overflow-auto mt-4">
+                                    <table class="member-info table table-borderless mt-4">
+                                        <tbody>
+                                            <tr class="position-relative">
+                                                <td>
+                                                    <h5 class="member-name">abc</h5>
+                                                    <h6 class="member-email mt-4"><small>abc@gmail.com</small></h6>
+                                                </td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="member-department">aa</h6>
+                                                </td>
+                                            </tr>
+                                            <tr class="position-relative">
+                                                <td>
+                                                    <h5 class="member-name">def</h5>
+                                                    <h6 class="member-email mt-4"><small>def@gmail.com</small></h6>
+                                                </td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="member-department">aa</h6>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
+                            <div class="col-12 col-md-6 bottom-line all-line">
+                                <div class="overflow-auto mt-4">
+                                    <div class="member-detail mt-4">
+                                        <h3 class="member-detail-name">abc</h3>
+                                        <h6 class="detail-member-department detail-department float-right">aa</h6>
+                                        <h6 class="member-email mt-5"><small>abc@gmail.com</small></h6>
+                                    </div>
+                                    <div class="member-detail detail-incoming">
+                                        <div class="detail-incoming-card mt-4">
+                                            <div class="float-right"><button type="button"
+                                                    class="btn btn-primary mt-3">會員綁卡</button>
+                                                <div><button type="button"
+                                                        class="btn btn-outline-danger mt-3">解除綁定</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                     <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
